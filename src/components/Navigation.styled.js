@@ -1,0 +1,88 @@
+import styled from 'styled-components'
+
+export const NavigationWrapper = styled.div`
+    position: relative;
+    z-index: 10000;
+    padding-left: 20%;
+    margin: -20px 0 100px;
+    width: 100%;
+    height: 30vh;
+`
+
+export const ItemsList = styled.ul`
+  position: relative;
+  transform: rotate(-35deg) skew(20deg,5deg);
+  
+li {
+  background: #000;
+  color: #575757;
+  text-align: center;
+  height: 2.5em;
+  width: 4em;
+  vertical-align: middle;
+  line-height: 2.5em;
+  border-bottom: 1px solid #060606;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  box-shadow: -2em 1.5em 0 #e1e1e1;
+  transition: all .25s linear;
+  
+  &:hover {
+    background: #ff6e42;
+    color: #fffcfb;
+    transform: translate(.9em, -.9em);
+    transition: all .25s linear;
+    box-shadow: -2em 2em 0 #e1e1e1;
+    
+    &:before, 
+    &:after { 
+      transition: all .25s linear; 
+    }
+    
+    &:before {
+      background: #b65234;
+      width: 1em;
+      top: .5em;
+      left: -1em;
+    }
+    
+    &:after {
+      background: #b65234;
+      width: 1em;
+      bottom: -2.5em;
+      left: 1em;
+      height: 4em;
+    }
+  }
+  
+  &:before, 
+  &:after {
+    content: '';
+    position: absolute;
+    transition: all .25s linear;
+    width: .5em;
+  }
+
+  &:after {
+    height: 4em;
+    background: #181818;
+    bottom: -2.25em;
+    left: 1.5em;
+    transform: rotate(90deg) skew(0,45deg);
+  }
+  
+  &:before {
+    height: 2.5em;
+    background: #121212;
+    top: .25em;
+    left: -.5em;
+    transform: skewY(-45deg);
+  }
+  a {
+    color: ${({ theme }) => theme.colors.primary};
+    text-decoration: none;
+  }
+}
+
+  `

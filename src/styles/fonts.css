@@ -1,0 +1,24 @@
+@font-face {
+  font-family: 'PMGrotesk';
+  src: url('./fonts/PMGrotesk-Regular.otf');
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: 'PMGroteskBold';
+  src: url('./fonts/PMGrotesk-Bold.otf');
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: 'PMGroteskLight';
+  src: url('./fonts/PMGrotesk-Light.otf');
+  font-style: normal;
+  font-display: auto;
+}
+@font-face {
+  font-family: 'BRegular';
+  src: url('./fonts/Baryton-Regular.ttf');
+  font-style: normal;
+  font-display: auto;
+}
